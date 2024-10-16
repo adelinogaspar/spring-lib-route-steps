@@ -1,0 +1,10 @@
+@host=http://localhost:8080
+@host_mock=http://localhost:3000
+
+###
+GET {{host}}/user/3a3d551f-1eed-4b85-a7f8-257566a22a26
+#/3a3d551f-1eed-4b85-a7f8-257566a22a26
+
+###
+#
+GET {{host_mock}}/users/3a3d551f-1eed-4b85-a7f8-257566a22a26

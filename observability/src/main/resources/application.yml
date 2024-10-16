@@ -1,0 +1,16 @@
+spring:
+  application.name: observability
+  cloud.openfeign.client.config.userClient.url: http://localhost:3000
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+    property-naming-strategy: SNAKE_CASE
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.yourpackage.UserClient: DEBUG
+    feign: DEBUG
